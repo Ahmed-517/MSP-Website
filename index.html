@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== UNICONS ===============-->
+    <link rel="stylesheet" href="assets/Css/line.css">
+    <link rel="stylesheet" href="assets/Css/solid.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/Css/style.css">
+    <!-- Css sections -->
+
+    <title>MSP Website Website</title>
+    <script src="assets/Js/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header"></header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home" id="home"></section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about"></section>
+
+        <!--=============== TEACHERS ===============-->
+        <section class="teachers section" id="teachers"></section>
+
+        <!--=============== BRANDS ===============-->
+        <section class="brand section container"></section>
+
+        <!--=============== COURSES ===============-->
+        <section class="courses section" id="courses"></section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section"></footer>
+
+    <!--=============== JS ===============-->
+    <script src="assets/Js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#header").load( "section/header.html" );
+            $("#home").load( "section/home.html" );
+            $("#about").load( "section/about.html" );
+            $("#teachers").load( "section/teachers.html" );
+        });
+    </script>
+</body>
+</html>
