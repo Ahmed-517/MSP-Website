@@ -125,8 +125,15 @@ img {
 
 
 /*=============== FOOTER ===============*/
-
-
+.footer{
+    margin-top: 8rem;
+    background-color: #0e1133;  
+}
+.footer__container{
+    /*grid-template-columns: repeat(4,1 fr);*/
+    justify-items: center;
+    column-gap: 1rem;
+}
 /*=============== SCROLL BAR ===============*/
 
 
