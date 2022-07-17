@@ -130,7 +130,7 @@ img {
     background-color: #0e1133;  
 }
 .footer__container{
-    /*grid-template-columns: repeat(4,1 fr);*/
+    grid-template-columns: repeat(4,1 fr);
     justify-items: center;
     column-gap: 1rem;
 }
