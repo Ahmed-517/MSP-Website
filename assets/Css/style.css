@@ -83,10 +83,24 @@ img {
     height: auto;
 }
 /*=============== LAYOUT ===============*/
-
-
+.container{
+    max-width: 1140 px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
-
+.section{
+    padding: 7rem 0 1rem;
+}
+.section__title{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    text-align: 0.25rem;
+    line-height: 140%;
+}
 
 /*=============== HEADER & NAV ===============*/
 
