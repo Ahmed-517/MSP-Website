@@ -1,8 +1,6 @@
 put your name here:
 -------------------
-<<<<<<< HEAD
 Shukri Mahmoud.
 =======
 Mahmoud Khalafallah 🥺
 Ahmed
->>>>>>> 336cb3cffbc0065f8f4cdb31269d94bd45f017e0
