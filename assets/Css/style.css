@@ -54,48 +54,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body,
 input,
 textarea {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
+
 body {
     background-color: var(--body-color);
     color: var(--text-color);
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     color: var(--title-color);
     font-weight: var(--font-semibold);
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
+
 input {
     border: none;
     outline: none;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 /*=============== LAYOUT ===============*/
-.container{
+.container {
     max-width: 1140 px;
     margin-left: auto;
     margin-right: auto;
 }
-.grid{
+
+.grid {
     display: grid;
 }
+
 /*=============== REUSABLE CSS CLASSES ===============*/
-.section{
+.section {
     padding: 7rem 0 1rem;
 }
-.section__title{
+
+.section__title {
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
     text-align: 0.25rem;
@@ -139,14 +152,80 @@ img {
 
 
 /*=============== FOOTER ===============*/
-.footer{
+.footer {
     margin-top: 8rem;
-    background-color: #0e1133;  
+    background-color: #0e1133;
 }
-.footer__container{
-    grid-template-columns: repeat(4,1 fr);
+
+.footer__container {
+    grid-template-columns: repeat(4, fr);
     justify-items: center;
     column-gap: 1rem;
+}
+
+.footer__logo {
+    margin-bottom: 1.25rem;
+
+}
+
+.footer__describtion {
+    color: hsl(var(--hue), 8%, 75%);
+    margin-bottom: 2.5rem;
+}
+.footer__social{
+    display: flex;
+    column-gap: 0.75rem;
+}
+.footer__social-link{
+    display: inline-block;
+    background-color: var(--container-color);
+    width: 44px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: #fff;
+    border: 2px solid;
+    transition: 0.4s;
+}
+.footer__social-link:nth-child(1){
+    background-color: #285da1;
+    border-color: #285da1;
+}
+.footer__social-link:nth-child(2){
+    background-color: #03a9f4;
+    border-color: #03a9f4;
+}
+.footer__social-link:nth-child(3){
+    background-color: #d2173f;
+    border-color: #d2173f;
+}
+.footer__social-link:hover{
+    background-color: transparent;
+}
+.footer__title{
+    font-size: var(--h3-font-size);
+    color: #fff;
+    margin-top: 1rem ;
+}
+.footer__links{
+    display: grid;
+    row-gap: 0.35rem;
+}
+.footer__link{
+font-size: var(--normal-font-size);
+color: hsl(var(--hue), 8%, 75%);
+transition: 0.3s;
+}
+.footer__link:hover{
+    color: #fff;
+}
+.footer__copy{
+    display: block;
+    text-align: center;
+    font-size: var(--normal-font-size);
+    color: hsl(var(--hue), 8%, 75%);
+    margin-top: 6rem;
 }
 /*=============== SCROLL BAR ===============*/
 
