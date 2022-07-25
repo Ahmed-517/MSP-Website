@@ -139,6 +139,11 @@ img {
 
 
 /*=============== BRANDS ===============*/
+.brand__title{
+    text-align: center;
+    font-size: var(--h2-font-size);
+    margin-bottom: 3rem;
+}
 .brand__container {
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
