@@ -22,8 +22,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
 
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -42,9 +42,9 @@
         --h1-font-size: 1.5rem;
         --h2-font-size: 1.25rem;
         --h3-font-size: 1rem;
-        --normal-font-size: .938rem;
-        --small-font-size: .813rem;
-        --smaller-font-size: .75rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
     }
 }
 
@@ -93,17 +93,15 @@ img {
 }
 
 /*=============== LAYOUT ===============*/
-.grid {
-    display: grid;
-}
-
 .container {
     max-width: 1140 px;
     margin-left: auto;
     margin-right: auto;
 }
 
-
+.grid {
+    display: grid;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
@@ -127,10 +125,132 @@ img {
 
 
 /*=============== HOME ===============*/
+.home {
+    position: relative;
+    min-height: 968px;
+    background: url(../Img/home.jpg);
+    background-repeat: no-repeat;
+    padding: 18rem 10rem 2rem;
+    z-index: -2;
+}
 
+.home::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 3, 62, 0.66);
+    z-index: -1;
+}
 
+.home__data {
+    max-width: 650px;
+}
+
+.home__subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: #ffb352;
+    margin-top: 1rem;
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    color: #fff;
+    line-height: 109%;
+    margin-bottom: 1.5rem
+}
+
+.home__description {
+    font-size: var(--h3-font-size);
+    color: hsl(var(--hue), 8%, 75%);
+    padding-right: 2.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.about__courses {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-tooltip);
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.about__course-item {
+    position: relative;
+    height: 100px;
+    padding: 23px 50px;
+    padding-right: 1.8rem;
+    z-index: -1;
+}
+
+.about__course-item::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.about__course-item:nth-child(1) {
+    background: url(../Img/slider-nav-4.jpg);
+    background-position: center;
+}
+
+.about__course-item:nth-child(1)::after {
+    background: rgba(247, 100, 30, 0.8);
+}
+
+.about__course-item:nth-child(2) {
+    background: url(../Img/slider-nav-1.jpg);
+    background-position: center;
+}
+
+.about__course-item:nth-child(2)::after {
+    background: rgba(45, 105, 240, 0.8);
+}
+
+.about__course-item:nth-child(3) {
+    background: url(../Img/slider-nav-2.jpg);
+    background-position: center;
+}
+
+.about__course-item:nth-child(3)::after {
+    background: rgba(231, 36, 110, 0.8);
+}
+
+.about__course-item:nth-child(4) {
+    background: url(../Img/slider-nav-3.jpg);
+    background-position: center;
+}
+
+.about__course-item:nth-child(4)::after {
+    background: rgba(12, 174, 116, 0.8);
+}
+.about__course-total{
+    display: inline-block;
+    color: #fff;
+    opacity: 0.8;
+}
+.about__course-title{
+    color: #fff;
+    font-size: var(--h3-font-size);
+}
 /*=============== BUTTONS ===============*/
-
+.button {
+    display: inline-block;
+    color: #fff;
+    padding: 0.8rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    background-color: var(--first-color)
+}
 
 /*=============== ABOUT ===============*/
 
@@ -139,11 +259,12 @@ img {
 
 
 /*=============== BRANDS ===============*/
-.brand__title{
+.brand__title {
     text-align: center;
     font-size: var(--h2-font-size);
     margin-bottom: 3rem;
 }
+
 .brand__container {
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
@@ -171,8 +292,8 @@ img {
 
 /*=============== COURSES ===============*/
 .cousres__container {
-    grid-template-columns: repeat(3, 1 fr);
-    gap: 1.8 rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
 }
 
 .course__item {
@@ -382,7 +503,7 @@ img {
 }
 
 .footer__container {
-    grid-template-columns: repeat(4, fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     column-gap: 1rem;
 }
