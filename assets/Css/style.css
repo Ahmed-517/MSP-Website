@@ -445,7 +445,7 @@ img {
     transition: 0.4s;
 }
 
-.teacher__img-box:hover {
+.teacher__img-box:hover img {
     transform: scale(1.1);
 }
 
@@ -470,6 +470,16 @@ img {
     color: var(--title-color);
     border-radius: 0.25rem;
     transition: 0.4s;
+}
+
+.teacher__social-link:hover {
+    background-color: var(--first-color);
+    color: #fff;
+    border: none;
+}
+
+.teacher__social-link i {
+    font-weight: var(--font-scwibold);
 }
 
 /*=============== BRANDS ===============*/
