@@ -424,6 +424,7 @@ img {
 .teachers__container{
     grid-template-columns: repeat(3, 1fr);
     gap: 1.8rem;
+    padding: 7rem;
 }
 
 .teacher__item{
