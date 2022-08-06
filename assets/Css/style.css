@@ -421,30 +421,26 @@ img {
 }
 
 /*=============== TEACHERS ===============*/
-.teachers__container {
+.teachers__container{
     grid-template-columns: repeat(3, 1fr);
     gap: 1.8rem;
-    padding: 7rem;
 }
 
-.teacher__item {
+.teacher__item{
     background-color: var(--container-color);
     padding: 1.875rem;
     text-align: center;
-    border-radius: 0.4rem;
+    border-radius: 4rem;
 }
-
 .teacher__img-box {
     margin-bottom: 1.5rem;
     overflow: hidden;
 }
-
 .teacher__img-box img {
     transform: scale(1);
     vertical-align: middle;
     transition: 0.4s;
 }
-
 .teacher__img-box:hover img {
     transform: scale(1.1);
 }
@@ -471,13 +467,11 @@ img {
     border-radius: 0.25rem;
     transition: 0.4s;
 }
-
 .teacher__social-link:hover {
     background-color: var(--first-color);
     color: #fff;
     border: none;
 }
-
 .teacher__social-link i {
     font-weight: var(--font-scwibold);
 }
