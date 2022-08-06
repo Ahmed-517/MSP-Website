@@ -97,6 +97,7 @@ img {
     max-width: 1140 px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .grid {
@@ -111,59 +112,70 @@ img {
 .section__title {
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
-    text-align: 0.25rem;
+    text-align: center;
+    margin-bottom: 0.25rem;
     line-height: 140%;
 }
 
+.section__subtitle {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
 /*=============== HEADER & NAV ===============*/
-.header{
-    width:100%;
-    background-color: var(--first-color);
+.header {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+
     z-index: var(--z-fixed);
 }
-.nav{
-    height: calc(var(--header-height) + 1.5rem );
+
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
     display: flex;
-    justify-content: space-between;
-    margin-left: 10rem  ;
+    justify-content: space-around;
     align-items: center;
 }
-.logo__dark{
+
+.logo__dark {
     display: none;
 }
+
 .nav__link,
-.nav__toggle{
+.nav__toggle {
     color: #fff;
     font-weight: var(--font-semibold);
 }
-.nav__list{
+
+.nav__list {
     display: flex;
     flex-direction: row;
     column-gap: 2.5rem;
 }
-.nav__toggle{
+
+.nav__toggle {
     font-size: 1.5rem;
     margin-top: 0.75rem;
     cursor: pointer;
     display: none;
 }
-.nav__close{
-    display:none;
+
+.nav__close {
+    display: none;
 }
 
 /* Active link */
-.active-link::before{
-content: '';
-position: absolute;
-bottom: 1.5rem;
-left: 45%;
-width: 5px;
-height: 5px;
-background-color: var(--body-color);
-border-radius: 50%;
+.active-link::before {
+    content: '';
+    position: absolute;
+    bottom: 1.5rem;
+    left: 39.62%;
+    width: 5px;
+    height: 5px;
+    background-color: var(--body-color);
+    border-radius: 50%;
 }
 
 /* Change background header */
@@ -278,30 +290,187 @@ border-radius: 50%;
 .about__course-item:nth-child(4)::after {
     background: rgba(12, 174, 116, 0.8);
 }
-.about__course-total{
+
+.about__course-total {
     display: inline-block;
     color: #fff;
     opacity: 0.8;
 }
-.about__course-title{
+
+.about__course-title {
     color: #fff;
     font-size: var(--h3-font-size);
 }
+
 /*=============== BUTTONS ===============*/
 .button {
     display: inline-block;
-    color: #fff;
+    color: var(--body-color);
     padding: 0.8rem 1.75rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
-    background-color: var(--first-color)
+    background-color: var(--first-color);
+}
+
+.button--link {
+    color: var(--first-color);
+    border: 2px solid var(--first-color);
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+.button--link:hover {
+    background-color: var(--first-color);
+    color: #fff;
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+    margin-left: 7rem;
+}
 
+.about__group {
+    justify-self: flex-end;
+    position: relative;
+}
+
+.about__thumb {
+    margin-left: 6.25rem;
+}
+
+.about__thumb-img {
+    width: 370px;
+}
+
+.about__review {
+    position: absolute;
+    left: -1.5rem;
+    top: 6.25rem;
+    transform: rotate(90deg);
+}
+
+.about__review p span {
+    font-weight: var(--font-semibold);
+    color: var(--title-color);
+}
+
+.about__banner {
+    margin-top: -13rem;
+}
+
+.about__banner-img {
+    width: 240px;
+    border-radius: 0.4rem;
+}
+
+.about__students {
+    margin-left: 16.8rem;
+    margin-top: -5rem;
+}
+
+.about__students-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--container-color);
+}
+
+.about__students-img+.about__students-img {
+    margin-left: -0.75rem;
+}
+
+.about__student-details {
+    margin-top: 0.25rem;
+    font-size: var(--small-font-size);
+}
+
+.about__student-details span {
+    font-weight: var(--font-semibold);
+    color: var(--title-color);
+}
+
+.about__title {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about__description {
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.about__details {
+    display: grid;
+    row-gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.about__details-description {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+}
+
+.about__details-icon {
+    font-size: 1.25rem;
+    color: var(--first-color);
+}
 
 /*=============== TEACHERS ===============*/
+.teachers__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+    padding: 7rem;
+}
 
+.teacher__item {
+    background-color: var(--container-color);
+    padding: 1.875rem;
+    text-align: center;
+    border-radius: 0.4rem;
+}
+
+.teacher__img-box {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.teacher__img-box img {
+    transform: scale(1);
+    vertical-align: middle;
+    transition: 0.4s;
+}
+
+.teacher__img-box:hover {
+    transform: scale(1.1);
+}
+
+.teacher__title {
+    display: inline-block;
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.75rem;
+}
+
+.teacher__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.6rem;
+}
+
+.teacher__social-link {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--border-color);
+    color: var(--title-color);
+    border-radius: 0.25rem;
+    transition: 0.4s;
+}
 
 /*=============== BRANDS ===============*/
 .brand__title {
@@ -339,6 +508,7 @@ border-radius: 50%;
 .cousres__container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.8rem;
+    padding: 7rem;
 }
 
 .course__item {
