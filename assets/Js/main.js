@@ -10,6 +10,7 @@ function showMenu() {
 }
 
 /*===== MENU HIDDEN =====*/
+
 /* Validate if constant exists */
 if (navClose) {
     navClose.addEventListener('click', ()=>{
