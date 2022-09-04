@@ -212,7 +212,7 @@ img {
     background: url(../Img/MSP-team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     padding: 18rem 0 2rem;
     z-index: -2;
 }
