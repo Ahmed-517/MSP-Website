@@ -204,12 +204,16 @@ img {
     color: var(--title-color);
 }
 
+
+.msp-logo {
+    width: 110px;
+}
 /*=============== HOME ===============*/
 .home {
     position: relative;
     min-height: 968px;
     /* background: url(../Img/home.jpg); */
-    background: url(../Img/MSP-team.jpg);
+    background: url(../Img/msp-home.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
