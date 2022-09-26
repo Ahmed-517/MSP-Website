@@ -259,7 +259,7 @@ img {
     margin-bottom: 2.5rem;
 }
 
-.about__courses {
+.about__committees {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -540,7 +540,7 @@ img {
     transform: translate(0.25rem);
 }
 
-/*=============== COURSES ===============*/
+/*=============== committees ===============*/
 .cousres__container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.8rem;
@@ -738,7 +738,7 @@ img {
     color: #b128ff;
 }
 
-/*=============== COURSES PAGE ===============*/
+/*=============== committees PAGE ===============*/
 
 
 /*=============== COURSE DETAILS PAGE ===============*/
@@ -950,7 +950,7 @@ img {
         min-height: 700px;
         padding-top: 14rem;
     }
-    .about__courses {
+    .about__committees {
         display: none;
     }
     .teachers__container,
