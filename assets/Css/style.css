@@ -1027,3 +1027,125 @@ img {
     }
 
 }
+
+/* start C# committee */
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.page h1{
+    color: #03A9F4;
+}
+.page .content-one{
+    width: calc(90% / 3);
+    /* margin: 0px auto; */
+}
+.content-one{
+    font-size: 20px;
+    font-weight: bold;
+}
+.timeline{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -10px;
+}
+.timeline .timline-content{
+    position: relative;
+    overflow: hidden;
+}
+.timeline .timline-content::before{
+    content: " ";
+    width: 2px;
+    height: 100%;
+    background-color:#03A9F4;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 0;
+    
+}
+
+.timeline .timline-content .left,
+.timeline .timline-content .right{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.timeline .timline-content .left{
+    float: left;
+}
+.timeline .timline-content .left::before{
+    right: -35px;
+}
+.timeline .timline-content .right{
+    float: right;
+}
+.timeline .timline-content .right::before{
+    left:  -35px;
+}
+
+.timeline .timline-content .content{
+    padding: 20px;
+    background-color: white;
+    z-index: 1000;
+    position: relative;
+    background-color: #eee;
+
+}
+.timeline .timline-content .content h3{
+    font-weight: bold;
+    color:  #03A9F4;
+    margin: 0 0 10px;
+    
+}
+.timeline .timline-content .content p{
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+.clearfix{
+    clear: both;
+}
+
+.header-c{
+    margin-top: 20px;
+    text-align: center;
+    color: #03A9F4;
+}
+
+/* @media(max-width:767px){
+    .timeline .timline-content .left,
+    .timeline .timline-content .right{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .timeline .timline-content .right::before,
+    .timeline .timline-content .left::before{
+        display: none;
+    }
+    .timeline .timline-content .left .content::before{
+        display: none;
+    }
+    .timeline .timline-content .right .content::before{
+        display: none;
+    }
+} */
+
+.page .image2{
+    width: calc(90% / 3);
+}
+.page .image2 img{
+    width: 400px;
+    height: 50%;
+}
+.page .image1{
+    width: calc(90% / 3);
+}
+.page .image1 img{
+    width: 400px;
+    height: 350px;
+}
+
+/* end C# committee */
