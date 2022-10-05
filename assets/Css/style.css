@@ -1057,6 +1057,26 @@ img {
 .timeline .timline-content{
     position: relative;
     overflow: hidden;
+    counter-reset: counter;
+}
+.timeline .timline-content .content::before{
+    counter-increment: counter;
+    content: counter(counter);
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #03A9F4;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    margin-top: -10px;
+    /* z-index: 3; */
+
 }
 .timeline .timline-content::before{
     content: " ";
@@ -1151,7 +1171,7 @@ img {
         flex-direction: column;
     }
     .page .content-one{
-        width: 100%;
+        width: 98%;
     }
     .page .image2{
         width: 100%;
