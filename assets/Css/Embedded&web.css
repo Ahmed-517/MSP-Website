@@ -16,7 +16,7 @@
     background-position: center;
     padding: 18rem 0 2rem;
     z-index: -2;
-    box-shadow:  0 0 30px 20px #5374a1;
+    box-shadow:  0 0 10px 8px #5374a1;
 }
 
 .Hm_embedded::before {
@@ -39,7 +39,7 @@
     background-position: center;
     padding: 18rem 0 2rem;
     z-index: -2;
-    box-shadow:  0 0 30px 20px #5374a1;
+    box-shadow:  0 0 10px 8px #5374a1;
 }
 .Hm_web::after {
     position: absolute;
