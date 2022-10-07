@@ -1,52 +1,78 @@
 * {
     margin: 0;
 }
-.mbody{
+
+.mbody {
     background-color: aliceblue;
 }
- .Hm{
+
+.Hm {
     background: url(../committee_img/es.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 22rem 0 2rem;
     z-index: -2;
-  }
-  .quote{
-    padding-left:40px ;
+}
+
+.quote {
+    padding-left: 40px;
     font-size: 40px;
     color: white;
-  }
-  .Hm p{
-    padding-left:60px ;
+}
+
+.Hm p {
+    padding-left: 60px;
     padding-bottom: 40px;
     font-size: 30px;
     color: rgb(184, 184, 184);
-  }
-  .cont{
+}
+
+
+
+.cont {
     padding-left: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-right: 400px;
-  }
-  .title{
-    margin:30px;
-  }
-  .brief{
+}
+
+.title {
+    padding-bottom: 10px;
     margin-bottom: 30px;
-  }
-  .course_content{
+    margin-top: 30px;
+    border-bottom: 1px solid;
+    width: 27%;
+
+}
+
+.brief {
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.course_content {
     margin: 40px;
     line-height: 30px;
-  }
-  .subtitle{
+}
+
+.subtitle {
     margin-bottom: 20px;
-  }
-.image{
+}
+
+.intro {
+    font-size: 18px;
+}
+
+.image {
     float: right;
     padding: 10px;
-    border-radius: 12%;
+    border-radius: 30px;
+    width: 300px;
+    margin-top: 30px;
 }
-.final{
-    
+
+.final {
+    font-size: 20px;
 }
