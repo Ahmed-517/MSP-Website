@@ -8,26 +8,49 @@
 }
 
 .Hm {
-    background: url(../committee_img/es.jpg);
+
+    height: 100vh;
+    width: 100%;
+    box-shadow:  0 0 30px 20px #5374a1
+    /* background: url(../committee_img/es.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 22rem 0 2rem;
-    box-shadow:  0 0 30px 20px #38485f; /* mark the inset */
-    z-index: -2;
+   ; 
+    z-index: -2;*/
+}
+
+.Hm::before {
+    content: "";
+    background-image: url('../committee_img/es.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+}
+
+.home_op {
+    position: relative;
+    font-size: 14rem;
+    line-height: 0.9;
+    padding-top: 30rem;
 }
 
 .quote {
     padding-left: 40px;
     font-size: 40px;
-    color: rgb(0, 109, 233);
+    color: rgb(15, 33, 54);
 }
 
 .Hm p {
     padding-left: 60px;
-    padding-bottom: 40px;
+    padding-top: 30px;
     font-size: 30px;
-    color: rgb(184, 184, 184);
+    color: rgb(43, 42, 49);
 }
 
 
