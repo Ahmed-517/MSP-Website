@@ -7,53 +7,75 @@
     overflow-x: hidden;
 }
 
-.Hm {
-
-    height: 100vh;
-    width: 100%;
-    box-shadow:  0 0 30px 20px #5374a1
-    /* background: url(../committee_img/es.jpg);
+.Hm_embedded {
+    position: relative;
+    height: 300px;
+    background: url(../committee_img/es.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 22rem 0 2rem;
-   ; 
-    z-index: -2;*/
+    padding: 18rem 0 2rem;
+    z-index: -2;
+    box-shadow:  0 0 30px 20px #5374a1;
 }
 
-.Hm::before {
-    content: "";
-    background-image: url('../committee_img/es.jpg');
-    background-size: cover;
+.Hm_embedded::before {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.8;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 3, 62, 0.66);
+    z-index: -1;
+}
+
+.Hm_web {
+    position: relative;
+    height: 300px;
+    background: url(../committee_img/web.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 18rem 0 2rem;
+    z-index: -2;
+    box-shadow:  0 0 30px 20px #5374a1;
+}
+.Hm_web::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 3, 62, 0.66);
+    z-index: -1;
 }
 
 .home_op {
     position: relative;
     font-size: 14rem;
     line-height: 0.9;
-    padding-top: 30rem;
 }
 
 .quote {
     padding-left: 40px;
-    font-size: 40px;
-    color: rgb(15, 33, 54);
+    font-size: 45px;
+    color: rgb(213, 213, 213);
 }
 
-.Hm p {
+.Hm_web p {
     padding-left: 60px;
     padding-top: 30px;
-    font-size: 30px;
-    color: rgb(43, 42, 49);
+    font-size: 35px;
+    color: rgb(207, 162, 48);
 }
-
-
+.Hm_embedded p {
+    padding-left: 60px;
+    padding-top: 30px;
+    font-size: 35px;
+    color: rgb(207, 162, 48);
+}
 
 .cont {
     padding-left: 100px;
@@ -98,7 +120,7 @@
     width: 300px;
     margin-top: 30px;
     animation: anim1;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-play-state: paused;
 }
@@ -120,7 +142,7 @@
     width: 300px;
     margin-top: 30px;
     animation: anim2;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-play-state: paused;
 }
@@ -141,7 +163,7 @@
     border-radius: 30px;
     width: 300px;
     animation: anim3;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-play-state: paused;
 }
