@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!--=============== UNICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/Css/stylePages.css" />
+    
+    <!--======== CSS Sections ========-->
+
+    <title>MSP Website Website</title>
+    <script src="assets/Js/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="header" id="header"></header>
+
+    <!-- https://docs.google.com/forms/d/e/1FAIpQLScyIisO-ceZHnDJ4Q_O4EK82VXLHuVdF-vr8bt5ZVmGEIo50w/formResponse
+    entry.830369851=name&entry.224384471=%D8%AE%D9%8A%D8%A7%D8%B1+2 -->
+
+    <!-- Start MSP form  -->
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScyIisO-ceZHnDJ4Q_O4EK82VXLHuVdF-vr8bt5ZVmGEIo50w/formResponse" method="post">
+
+      <input type="text" name="entry.830369851" placeholder="enter your name">
+      choose
+      <input type="radio" name="entry.224384471" value="الخيار رقم 1">
+      <input type="radio" name="entry.224384471" value="خيار 2">
+
+      <button type="submit">submit</button>
+
+    </form>
+    <!-- End MSP form  -->
+
+
+    <!-- Footer  -->
+    <footer class="footer section" id="footer"></footer>
+
+    <script>
+        $(document).ready(function () {
+          $("#header").load("header.html");
+          $("#footer").load("footer.html");
+        });
+      </script>
+  </body>
