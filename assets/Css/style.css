@@ -541,6 +541,11 @@ img {
 
 /*=============== committees ===============*/
 .cousres__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+    padding: 7rem;
+}
+.cousres__container_home {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.8rem;
     padding: 7rem;
