@@ -6,46 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/Css/style.css">
     <link rel="stylesheet" href="../assets/Css/Embedded&web.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css" />
     <link rel="icon" href="../assets/web images/icon.png">
     <title>Web Development</title>
 </head>
+<header class="header" id="header">
+<nav class="nav container">
+    <a href="../index.html" class="nav__logo logo__light"><img class="msp-logo" src="../assets/Img/msp-logo-light.png" alt=""></a>
+    <a href="../index.html" class="nav__logo logo__dark"><img class="msp-logo" src="../assets/Img/msp-logo-dark.png" alt=""></a>
+    
+    <!-- <a href="index.html" class="nav__logo logo__light">MSP</a> -->
+    <!-- <a href="index.html" class="nav__logo logo__dark">MSP</a> -->
 
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="../index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+                <a href="../pages/committees page.html" class="nav__link">Committees</a>
+            </li>
+            <li class="nav__item">
+                <a href="teachers.html" class="nav__link">Board</a>
+            </li>
+            <li class="nav__item">
+                <a href="contact.html" class="nav__link">About Us</a>
+            </li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+            <i class="uil uil-times"></i>
+        </div>
+    </div>
+    <div class="nav__toggle" id="nav-toggle" onclick="showMenu()">
+        <i class="uil uil-apps"></i>
+    </div>
+
+    <a href="commitee/web.html" class="button button__header">
+      Join Us
+    </a>
+
+</nav>
+</header>
 <body class="mbody">
-    <nav class="nav container">
-        <a href="../index.html" class="nav__logo logo__light"><img class="msp-logo" src="../assets/Img/msp-logo-light.png" alt=""></a>
-        <a href="../index.html" class="nav__logo logo__dark"><img class="msp-logo" src="../assets/Img/msp-logo-dark.png" alt=""></a>
-        
-        <!-- <a href="index.html" class="nav__logo logo__light">MSP</a> -->
-        <!-- <a href="index.html" class="nav__logo logo__dark">MSP</a> -->
-  
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link">Home</a>
-                </li>
-                <li class="nav__item">
-                    <a href="committees.html" class="nav__link">Committees</a>
-                </li>
-                <li class="nav__item">
-                    <a href="teachers.html" class="nav__link">Board</a>
-                </li>
-                <li class="nav__item">
-                    <a href="contact.html" class="nav__link">About Us</a>
-                </li>
-            </ul>
-            <div class="nav__close" id="nav-close">
-                <i class="uil uil-times"></i>
-            </div>
-        </div>
-        <div class="nav__toggle" id="nav-toggle" onclick="showMenu()">
-            <i class="uil uil-apps"></i>
-        </div>
-    
-        <a href="commitee/web.html" class="button button__header">
-          Join Us
-        </a>
-    
-    </nav>
     <div class="Hm_web">
         <div class="home_op">
             <div class="quote">
@@ -65,11 +68,11 @@
         <div class="course_content">
             <h2 class="subtitle">Content</h2>
             <p class="intro">Here are some topic's which aimed to be covered during season</p>
-            <ul>
+            <ul class="ul_styled">
                 <li>
                     <h3>HTML</h3>
                 </li>
-                <ul>
+                <ul class="ul_2nd">
                     <li>Basics, Editors, elements...</li>
                     <li>Forms</li>
                     <img src="../assets/web images/css.png" alt="CSS" class="image2" id="im2">
@@ -79,7 +82,7 @@
                 <li>
                     <h3>CSS</h3>
                 </li>
-                <ul>
+                <ul class="ul_2nd" >
                     <li>Introduction</li>
                     <li>Syntax, Selectors, Colors...</li>
                     <li>Grid, Flex...</li>
@@ -87,7 +90,7 @@
                 <li>
                     <h3>Java Script</h3>
                 </li>
-                <ul>
+                <ul class="ul_2nd">
                     <li>Introduction</li>
                     <img src="../assets/web images/js.jpg" alt="Java Script" class="image3" id="im3">
                     <li>Output, Statements, variables...</li>
@@ -103,60 +106,55 @@
             a final website to make sure <br>that you have totally understood the content.
         </div>
     </div>
-    <footer class="footer section" id="footer">
-        <div class="footer__container grid container">
-            <div class="footer__content">
-              <img src="assets/Img/msp-logo-light.png" alt="" calss="footer__logo" />
-              <p class="footer__describtion">
-                Don't focus on Exhaustion <br />
-                Focus on progress
-              </p>
-              <div class="footer__social">
-                <a href="https://www.facebook.com/" class="footer__social-link">
-                  <i class="uil uil-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/" class="footer__social-link">
-                  <i class="uil uil-twitter-alt"></i>
-                </a>
-                <a href="https://www.youtube.com/" class="footer__social-link">
-                  <i class="uil uil-youtube"></i>
-                </a>
-              </div>
-            </div>
-            <div class="footer__content">
-              <h3 class="footer__title">About</h3>
-              <ul class="footer__Links">
-                <li><a href="#" class="footer__link">About Us</a></li>
-                <li><a href="#" class="footer__link">committees</a></li>
-                <li><a href="#" class="footer__link">Instructors</a></li>
-              </ul>
-            </div>
-            <div class="footer__content">
-              <h3 class="footer__title">Our Services</h3>
-              <ul class="footer__Links">
-                <li><a href="#" class="footer__link">Tutorials</a></li>
-                <li><a href="#" class="footer__link">Library</a></li>
-                <li><a href="#" class="footer__link">News & Blogs</a></li>
-              </ul>
-            </div>
-            <div class="footer__content">
-              <h3 class="footer__title">Our Community</h3>
-              <ul class="footer__Links">
-                <li><a href="#" class="footer__link">Career</a></li>
-                <li><a href="#" class="footer__link">Contact us</a></li>
-                <li><a href="#" class="footer__link">Events</a></li>
-              </ul>
-            </div>
-          </div>
-          <span class="footer__copy">&#169; MSP. All rights reserved</span>
-    </footer>
-    <script>
-        $(document).ready(function () {
-            $("#footer").load("../footer.html");
-            $("#header").load("../section/header.html");
-        });
-    </script>
-    <script src="../assets/Js/Embedded.js"></script>
 </body>
+<footer class="footer section" id="footer">
+    <div class="footer__container grid container">
+        <div class="footer__content">
+          <img src="assets/Img/msp-logo-light.png" alt="" calss="footer__logo" />
+          <p class="footer__describtion">
+            Don't focus on Exhaustion <br />
+            Focus on progress
+          </p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/" class="footer__social-link">
+              <i class="uil uil-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/" class="footer__social-link">
+              <i class="uil uil-twitter-alt"></i>
+            </a>
+            <a href="https://www.youtube.com/" class="footer__social-link">
+              <i class="uil uil-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">About</h3>
+          <ul class="footer__Links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">committees</a></li>
+            <li><a href="#" class="footer__link">Instructors</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+          <ul class="footer__Links">
+            <li><a href="#" class="footer__link">Tutorials</a></li>
+            <li><a href="#" class="footer__link">Library</a></li>
+            <li><a href="#" class="footer__link">News & Blogs</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Our Community</h3>
+          <ul class="footer__Links">
+            <li><a href="#" class="footer__link">Career</a></li>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+            <li><a href="#" class="footer__link">Events</a></li>
+          </ul>
+        </div>
+      </div>
+      <span class="footer__copy">&#169; MSP. All rights reserved</span>
+</footer>
+<script src="../assets/Js/Embedded.js"></script>
+<script src="../assets/Js/main.js"></script>
 
 </html>

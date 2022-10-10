@@ -231,6 +231,17 @@ img {
     box-shadow: 0 0 10px 10px;
     z-index: -5;
 }
+.home_g{
+    position: relative;
+    min-height: 968px;
+    background: url(../committee_img/c_sharp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 18rem 0 2rem;
+    box-shadow: 0 0 10px 10px;
+    z-index: -5;
+}
 
 .home::after {
     position: absolute;
@@ -243,6 +254,16 @@ img {
     z-index: -4;
 }
 .home_c::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 3, 62, 0.66);
+    z-index: -4;
+}
+.home_g::after {
     position: absolute;
     content: '';
     left: 0;
@@ -1064,7 +1085,8 @@ img {
 
 }
 .page h1{
-    color: var(--first-color);
+    color: black;
+    margin-bottom: 50px;
 }
 .page .content-one{
     width: calc(90% / 3);
@@ -1081,7 +1103,7 @@ img {
 }
 .timeline .timline-content{
     position: relative;
-    overflow: hidden;
+    
     counter-reset: counter;
     
 }
@@ -1141,11 +1163,10 @@ img {
 .timeline .timline-content .content{
     padding: 25px;
     background-color: white;
-    z-index: 1000;
     position: relative;
     background-color: var(--container-color);
     border-radius: 20px;
-
+    box-shadow: 0px 0px 3px 1px;
 }
 .timeline .timline-content .content h3{
     font-weight: bold;

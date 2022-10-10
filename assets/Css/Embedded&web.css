@@ -6,10 +6,17 @@
     background-color: aliceblue;
     overflow-x: hidden;
 }
-
+.ul_styled{
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+.ul_2nd{
+    list-style: circle;
+    padding-left:3rem ;
+}
 .Hm_embedded {
     position: relative;
-    height: 300px;
+    height: 100vh;
     background: url(../committee_img/es.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,7 +39,7 @@
 
 .Hm_web {
     position: relative;
-    height: 300px;
+    height: 100vh;
     background: url(../committee_img/web.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,8 +96,7 @@
     margin-bottom: 30px;
     margin-top: 30px;
     border-bottom: 1px solid;
-    width: 27%;
-
+    width: 28%;
 }
 
 .brief {
