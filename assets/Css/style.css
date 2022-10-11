@@ -425,6 +425,8 @@ img {
 }
 .teacher__img-box {
     margin-bottom: 1.5rem;
+    
+
     overflow: hidden;
 }
 .teacher__img-box img {
