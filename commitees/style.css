@@ -38,6 +38,8 @@
 .button1:hover {
     background-color: transparent;
     color: white;
+    border: 1px solid rgb(231, 231, 231);
+
 }
 
 #flutter {
