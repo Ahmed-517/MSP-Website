@@ -204,6 +204,11 @@ img {
     color: var(--title-color);
 }
 
+.scroll-header .msp-logo {
+    width: 82px;
+
+}
+
 
 .msp-logo {
     width: 110px;
