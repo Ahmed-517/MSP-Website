@@ -1,4 +1,9 @@
+body {
+    overflow-x: hidden;
+}
+
 .mainclass {
+    position: relative;
     height: 100vh;
     background-image: url(../committee_img/flutter.jpg);
     background-blend-mode: overlay;
@@ -15,9 +20,14 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 3, 62, 0.66);
+    background: rgba(0, 3, 62, 0.665);
 }
     
+
+.main-cyber {
+    background-image: url(../committee_img/cyber.jpg);
+
+}
 @keyframes animation1 {
    
     0% {
@@ -32,6 +42,11 @@
 
 .container-main1 {
     height: 100%;
+}
+
+.text-main {
+    position: absolute;
+    z-index: 5;
 }
 
 .button1 {
@@ -55,9 +70,16 @@
     border-radius: 50%;
     transition: 1s ease-in-out;
 }
+.imgs-cyber img {
+    width: 230px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;}
 
 .imgs-art img:hover {
     transform: rotate(15deg);
+}
+.imgs-cyber img:hover {
+    transform: scale(1.05);
 }
 
 .artsec2 {
@@ -84,3 +106,21 @@
     margin-top: 0 !important;
     background-color: #0e1133;
 }
+
+canvas {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+}   
+
+.cyber-art {
+    position: relative;
+    background-color: #2C1D7A !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgs-cyber {
+ }
