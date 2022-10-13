@@ -66,6 +66,11 @@ textarea {
     font-size: var(--normal-font-size);
 }
 
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--body-color);
     color: var(--text-color);
