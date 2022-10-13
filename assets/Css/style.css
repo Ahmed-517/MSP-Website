@@ -570,11 +570,16 @@ img {
     transform: scale(1);
     vertical-align: middle;
     transition: 0.4s;
+    filter: grayscale(100%);
 }
 
 .course__box:hover .course__img {
     transform: scale(1.1);
+    filter: none;
+}
 
+.course__box:hover .course__tag {
+    display: none;
 }
 
 .course__tag {
