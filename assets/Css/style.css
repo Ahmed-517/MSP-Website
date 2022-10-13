@@ -1096,3 +1096,7 @@ img {
     }
 }
 /* end C# committee */
+
+.cont-board {
+    margin: auto !important;
+}
