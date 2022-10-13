@@ -67,6 +67,10 @@ body {
     color: var(--text-color);
 }
 
+html , body {
+    overflow-x: hidden !important;
+}
+
 h1,
 h2,
 h3 {
@@ -325,6 +329,11 @@ img {
 /*=============== SCROLL BAR ===============*/
 
 
+/*=============== FORM ===============*/
+.form-control , .form-label , hr {
+    width: 400px !important;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width:1206px) {
@@ -481,11 +490,15 @@ img {
     .brand__container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .form-control , .form-label , hr {
+        margin-left: -20px;
+        width: 300px !important;
+    }
 
 }
 
 /* For small devices */
-@media screen and (max-width:350px) {
+@media screen and (max-width:370px) {
     .container {
         margin-left: 1rem;
         margin-right: 1rem;
@@ -512,5 +525,10 @@ img {
     .teachers__container {
         grid-template-columns: 1fr;
     }
+
+    .form-control , .form-label , hr {
+        width: 200px !important;
+    }
+
 
 }
