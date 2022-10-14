@@ -575,7 +575,7 @@ img {
     transform: scale(1);
     vertical-align: middle;
     transition: 0.4s;
-    filter: grayscale(100%);
+    filter: blur(1.5px);
 }
 
 .course__box:hover .course__img {
