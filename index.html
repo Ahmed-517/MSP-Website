@@ -1,334 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== UNICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
-    />
-    <link rel="icon" href="assets/Img/msp-logo.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== CSS ===============-->
-    <!-- Bootstrap -->
-    <link href="assets/Css/bootstrap.min.css" rel="stylesheet" />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+  <!--=============== UNICONS ===============-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css" />
+  <link rel="icon" href="assets/Img/msp-logo.png" />
 
-    <link rel="stylesheet" href="assets/Css/style.css" />
-    <link rel="stylesheet" href="assets/Css/nav-scroll.css" />
+  <!--=============== CSS ===============-->
+  <!-- Bootstrap -->
+  <link href="assets/Css/bootstrap.min.css" rel="stylesheet" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 
-    <!--======== CSS Sections ========-->
+  <link rel="stylesheet" href="assets/Css/style.css" />
+  <link rel="stylesheet" href="assets/Css/nav-scroll.css" />
 
-    <title>MSP Website Website</title>
-    <script src="assets/Js/jquery-3.6.0.js"></script>
-  </head>
+  <!--======== CSS Sections ========-->
 
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-      <nav class="navnav container-sm">
-        <a href="index.html" class="nav__logo logo__light"
-          ><img class="msp-logo" src="assets/Img/msp-logo-light.png" alt=""
-        /></a>
-        <a href="index.html" class="nav__logo logo__dark"
-          ><img class="msp-logo" src="assets/Img/msp-logo-dark.png" alt=""
-        /></a>
+  <title>MSP Website Website</title>
+  <script src="assets/Js/jquery-3.6.0.js"></script>
+</head>
 
-        <!-- <a href="index.html" class="nav__logo logo__light">MSP</a> -->
-        <!-- <a href="index.html" class="nav__logo logo__dark">MSP</a> -->
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="navnav container-sm">
+      <a href="index.html" class="nav__logo logo__light"><img class="msp-logo" src="assets/Img/msp-logo-light.png"
+          alt="" /></a>
+      <a href="index.html" class="nav__logo logo__dark"><img class="msp-logo" src="assets/Img/msp-logo-dark.png"
+          alt="" /></a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="pages/committees page.html" class="nav__link"
-                >Committees</a
-              >
-            </li>
-            <li class="nav__item">
-              <a href="pages/Board.html" class="nav__link">Board</a>
-            </li>
-            <li class="nav__item">
-              <a href="contact.html" class="nav__link">About Us</a>
-            </li>
-          </ul>
-          <div class="nav__close" id="nav-close">
-            <i class="uil uil-times"></i>
-          </div>
+      <!-- <a href="index.html" class="nav__logo logo__light">MSP</a> -->
+      <!-- <a href="index.html" class="nav__logo logo__dark">MSP</a> -->
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="pages/committees page.html" class="nav__link">Committees</a>
+          </li>
+          <li class="nav__item">
+            <a href="pages/Board.html" class="nav__link">Board</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">About Us</a>
+          </li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="uil uil-times"></i>
         </div>
-        <div class="nav__toggle" id="nav-toggle" onclick="showMenu()">
-          <i class="uil uil-apps"></i>
-        </div>
-
-        <a href="#about" class="button button__header"> Join Us </a>
-      </nav>
-    </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== HOME ===============-->
-      <section class="home" id="home"></section>
-
-      <!--=============== ABOUT ===============-->
-      <section class="about section" id="about"></section>
-
-      <!--=============== committees ===============-->
-      <section class="committees section" id="committees"></section>
-
-      <div class="text-center">
-        <a href="/pages/committees page.html" class="mt-3 button button--link"
-          >Show All</a
-        >
+      </div>
+      <div class="nav__toggle" id="nav-toggle" onclick="showMenu()">
+        <i class="uil uil-apps"></i>
       </div>
 
-      <!--=============== TEACHERS ===============-->
-      <!-- <section class="teachers section" id="teachers"></section> -->
-      <!--=============== BRANDS ===============-->
-      <!-- <section class="brand section container" id="brand"></section> -->
+      <a href="#about" class="button button__header"> Join Us </a>
+    </nav>
+  </header>
 
-      <section class="m-auto section" id="best_members">
-        <h2 class="section__title">Our Golden Members</h2>
-        <p class="section__subtitle">
-          You don't have to struggle alone, you've got our assistance and help.
-        </p>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== HOME ===============-->
+    <section class="home" id="home"></section>
 
-        <div class="w-40 m-auto">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="false"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="5"
-                aria-label="Slide 6"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="6"
-                aria-label="Slide 7"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="7"
-                aria-label="Slide 8"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="8"
-                aria-label="Slide 9"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/aya.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/foad.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/huda.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/M samy.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/Mahmoud.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/marawan.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/riham.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/Shadi.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/assets/best_members/shrerif.PNG"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5></h5>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <!--=============== ABOUT ===============-->
+    <section class="about section" id="about"></section>
+
+    <!--=============== committees ===============-->
+    <section class="committees section" id="committees"></section>
+
+    <div class="text-center">
+      <a href="/pages/committees page.html" class="mt-3 button button--link">Show All</a>
+    </div>
+
+    <!--=============== TEACHERS ===============-->
+    <!-- <section class="teachers section" id="teachers"></section> -->
+    <!--=============== BRANDS ===============-->
+    <!-- <section class="brand section container" id="brand"></section> -->
+
+    <section class="m-auto section best_members" id="best_members">
+      <h2 class="section__title">Our Golden Members</h2>
+      <p class="section__subtitle">
+        You don't have to struggle alone, you've got our assistance and help.
+      </p>
+
+      <div class="golden_members m-auto">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+              aria-label="Slide 9"></button>
+
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+              aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+              aria-label="Slide 11"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+              aria-label="Slide 12"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
+              aria-label="Slide 13"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13"
+              aria-label="Slide 14"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14"
+              aria-label="Slide 15"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15"
+              aria-label="Slide 16"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16"
+              aria-label="Slide 17"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17"
+              aria-label="Slide 18"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="18"
+              aria-label="Slide 19"></button>
+
           </div>
+          <div class="carousel-inner">
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/aya.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/foad.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/huda.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/M samy.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/Mahmoud.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/marawan.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/riham.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/Shadi.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/shrerif.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <!-- Start Part 2  -->
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/Asmaa nagdy.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/ebram.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/esraa sayed.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/mahmoud khalaf.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/maryam mohammed.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/mohamed sayed.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/mohamed youssef.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/mostafa emad.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/muhammad khalid.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/assets/best_members/part2/qurtam.PNG" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+              </div>
+            </div>
+            <!-- Start Part 2  -->
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer section" id="footer"></footer>
+  <!--=============== FOOTER ===============-->
+  <footer class="footer section" id="footer"></footer>
 
-    <!--=============== JS ===============-->
+  <!--=============== JS ===============-->
 
-    <script>
-      $(document).ready(function () {
-        // $("#header").load("section/header.html");
-        $("#home").load("sections/home.html");
-        $("#about").load("sections/about.html");
-        $("#committees").load("sections/committees.html");
-        // $("#best_members").load("sections/best_members.html");
-        // $("#header").load("header.html");
-        $("#footer").load("footer.html");
+  <script>
+    $(document).ready(function () {
+      // $("#header").load("section/header.html");
+      $("#home").load("sections/home.html");
+      $("#about").load("sections/about.html");
+      $("#committees").load("sections/committees.html");
+      // $("#best_members").load("sections/best_members.html");
+      // $("#header").load("header.html");
+      $("#footer").load("footer.html");
 
-        $(".carousel-inner").each(function () {
-          var divs = $(this).find("div.carousel-item");
-          for (var i = 0; i < divs.length; i++) $(divs[i]).remove();
-          //the fisher yates algorithm, from http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
-          var i = divs.length;
-          if (i == 0) return false;
-          while (--i) {
-            var j = Math.floor(Math.random() * (i + 1));
-            var tempi = divs[i];
-            var tempj = divs[j];
-            divs[i] = tempj;
-            divs[j] = tempi;
+      $(".carousel-inner").each(function () {
+        var divs = $(this).find("div.carousel-item");
+        for (var i = 0; i < divs.length; i++) $(divs[i]).remove();
+        //the fisher yates algorithm, from http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
+        var i = divs.length;
+        if (i == 0) return false;
+        while (--i) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tempi = divs[i];
+          var tempj = divs[j];
+          divs[i] = tempj;
+          divs[j] = tempi;
+        }
+        for (var i = 0; i < divs.length; i++) {
+          if (i == 0) {
+            $(divs[i]).addClass("active");
           }
-          for (var i = 0; i < divs.length; i++) {
-            if (i == 0) {
-              $(divs[i]).addClass("active");
-            }
-            console.log($(divs[i]));
-            $(divs[i]).appendTo(this);
-          }
-        });
+          console.log($(divs[i]));
+          $(divs[i]).appendTo(this);
+        }
       });
-    </script>
-    <script src="assets/Js/main.js"></script>
-  </body>
+    });
+  </script>
+  <script src="assets/Js/main.js"></script>
+</body>
+
 </html>
