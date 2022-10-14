@@ -685,6 +685,10 @@ img {
 
 /*=============== CONTACT PAGE ===============*/
 
+/* Best Members */
+.golden_members {
+    width: 40%;
+}
 
 /*=============== FOOTER ===============*/
 .footer {
@@ -837,6 +841,9 @@ img {
     }
     .course__more {
         padding: .5rem 1.25rem;
+    }
+    .golden_members {
+        width: 80%;
     }
 }
 
