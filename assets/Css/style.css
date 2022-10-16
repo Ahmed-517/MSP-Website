@@ -229,7 +229,8 @@ img {
     z-index: -5;
 }
 
-.home::after, .home_g::after,
+.home::after,
+.home_g::after,
 .home_H::after,
 .home_c::after,
 .home_p::after,
@@ -1179,4 +1180,38 @@ img {
 
 .cont-board {
     margin: auto !important;
+}
+
+/* count down*/
+.countdown h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.countdown {
+    padding-top: 50px;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.count {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    font-size: 3rem;
+}
+@media screen and (max-width: 600px) {
+    .countdown h2 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
 }
