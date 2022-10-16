@@ -1208,6 +1208,7 @@ img {
 .minute,
 .second {
     font-size: 3rem;
+    text-align: center;
 }
 @media screen and (max-width: 600px) {
     .countdown h2 {
