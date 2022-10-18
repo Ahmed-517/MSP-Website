@@ -1216,3 +1216,48 @@ img {
         font-weight: bold;
     }
 }
+
+/*closed form*/
+.all{
+    background-image: linear-gradient(to bottom,#00033ea8 50%,white 50%) ;
+    width: 295px;
+    height: 580px;
+    border: 1px gray solid;
+    border-radius: 8px;
+    text-align: center;
+    left: auto;
+    right: auto;
+    
+
+}
+.piclock{
+   margin-top: 30px;
+   margin-bottom: 50px;
+}
+.piclock img{
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    margin-top: 25px;
+   color: white;
+}
+h2{
+    margin-top: -15px;
+}
+.retry{
+    margin-top: 50px;
+    
+}
+.retry a{
+    text-decoration: none;
+    color: blue;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px 25px;
+    transition: all 400ms ease-in-out;
+}
+.retry:hover a{
+   background-color: blue;
+   color: white;
+}
+
